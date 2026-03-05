@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Viva - Auto Uncheck Remember Card",
+  "version": "1.0.0",
+  "description": "Automatically unchecks the 'Remember this card' checkbox on Viva payment pages so your card is never saved without your explicit consent.",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pay.vivapayments.com/*",
+        "https://demo.vivapayments.com/*",
+        "https://*.vivapayments.com/*",
+        "https://*.vfrm.me/*",
+        "https://*.vivawallet.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
