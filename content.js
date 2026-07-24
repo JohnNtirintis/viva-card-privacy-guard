@@ -44,11 +44,11 @@
       }
 
       console.log(
-        "[Viva Uncheck] ✔ 'Remember card' checkbox has been unchecked."
+        "[Viva Card Privacy Guard] ✔ 'Remember card' checkbox has been unchecked."
       );
     } else {
       console.log(
-        "[Viva Uncheck] Checkbox already unchecked — nothing to do."
+        "[Viva Card Privacy Guard] Checkbox already unchecked — nothing to do."
       );
     }
 

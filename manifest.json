@@ -1,11 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Viva - Auto Uncheck Remember Card",
+  "name": "Viva Card Privacy Guard",
   "version": "1.0.0",
-  "description": "Automatically unchecks the 'Remember this card' checkbox on Viva payment pages so your card is never saved without your explicit consent.",
+  "description": "Automatically unchecks the 'Remember this card' box on Viva Wallet payment pages, so your card details are never saved without your explicit consent.",
+  "author": "John Ntirintis",
+  "homepage_url": "https://github.com/JohnNtirintis/viva-card-privacy-guard",
   "icons": {
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "content_scripts": [
     {
@@ -24,8 +26,13 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "109.0"
     }
   }
 }
